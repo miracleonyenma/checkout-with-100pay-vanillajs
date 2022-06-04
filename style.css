@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cta {
+  @apply  border border-gray-200 bg-gray-50 font-semibold p-1.5 px-3.5 rounded-lg;
+  @apply  transition hover:-translate-y-0.5 active:translate-y-1 active:shadow-inner;
+}
+
+.payment-form {
+  @apply max-w-md m-auto bg-white rounded-lg shadow-lg;
+}
+
+.payment-form .wrapper {
+  @apply flex flex-col gap-2 p-6;
+}
+
+.form-group {
+  @apply flex gap-4;
+}
+
+.form-control{
+  @apply flex flex-col gap-1 py-0.5;
+}
+
+.form-input {
+  @apply w-full rounded-md mt-1;
+}
+
+.form-submit {
+  @apply pt-2;
+}
+
+.checkout-wrapper {
+  @apply grid grid-cols-7 gap-4 p-4 m-auto max-w-4xl;
+}
+
+.checkout-section {
+  @apply col-span-4;
+}
+
+.payment-form-cont {
+  @apply col-span-3;
+}

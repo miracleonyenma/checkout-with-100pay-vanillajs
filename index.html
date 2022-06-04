@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <section class="p-4">
+          <div class="checkout-wrapper">
+            <div class="checkout-section">
+              <header class="checkout-header">
+
+              </header>
+            </div>
+            <div class="payment-form-cont">
+              <form id="paymentForm" class="payment-form">
+                <div class="wrapper">
+                  <header class="mb-4">
+                    <h1 class="font-bold text-2xl">Complete Payment</h1>
+                  </header>
+                  <div class="form-group">
+                    <div class="form-control">
+                      <label for="first-name">First Name</label>
+                      <input type="text" id="firstName" class="form-input" />
+                    </div>
+                    <div class="form-control">
+                      <label for="last-name">Last Name</label>
+                      <input type="text" id="lastName" class="form-input" />
+                    </div>
+                  </div>
+                  <div class="form-control">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      id="emailAddress"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label for="phone">Phone </label>
+                    <input type="tel" id="phone" class="form-input" required />
+                  </div>
+                  <div class="form-control select">
+                    <label for="currency">Currency</label>
+                    <select name="currency" id="currency">
+                      <option value="USD">United States Dollar</option>
+                      <option value="NGN">Nigerian Naira</option>
+                    </select>
+                  </div>
+                  <div class="form-control">
+                    <label for="amount">Amount</label>
+                    <input
+                      type="number"
+                      id="amount"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                  <div class="form-submit">
+                    <button type="submit" class="cta w-full">Pay with 100pay</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Wrapper for the 100Pay checkout modal -->
+      <div id="show100Pay"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
