@@ -13,8 +13,32 @@
           <div class="checkout-wrapper">
             <div class="checkout-section">
               <header class="checkout-header">
-
+                <figure class="site-logo">
+                  100 Stores
+                </figure>
               </header>
+              <section class="cart-section">
+                <header class="cart-section-header">
+                  <h3>100 Stores checkout</h3>
+                  <p class="price total-amount">
+                    USD 40
+                  </p>
+                  <span class="items-count">
+                    3 items
+                  </span>
+                </header>
+                <section class="items-cont">
+                  <ul class="items">
+                    <li class="item">
+                      <div class="item-details">
+                        <div class="img-cont item-img">
+                          img
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+              </section>
             </div>
             <div class="payment-form-cont">
               <form id="paymentForm" class="payment-form">
@@ -25,11 +49,11 @@
                   <div class="form-group">
                     <div class="form-control">
                       <label for="first-name">First Name</label>
-                      <input type="text" id="firstName" class="form-input" />
+                      <input type="text" id="firstName" class="form-input" required/>
                     </div>
                     <div class="form-control">
                       <label for="last-name">Last Name</label>
-                      <input type="text" id="lastName" class="form-input" />
+                      <input type="text" id="lastName" class="form-input" required/>
                     </div>
                   </div>
                   <div class="form-control">
@@ -62,7 +86,12 @@
                     />
                   </div>
                   <div class="form-submit">
-                    <button type="submit" class="cta w-full">Pay with 100pay</button>
+                    <button type="submit" class="cta w-icon w-full">
+                      <span>Pay with</span>
+                      <span class="icon !w-16">
+                        <img src="https://100pay.co/img/100pay-logo.svg" alt="100pay logo" class="img">
+                      </span>
+                    </button>
                   </div>
                 </div>
               </form>

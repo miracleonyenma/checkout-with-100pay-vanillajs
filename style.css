@@ -7,6 +7,18 @@
   @apply  transition hover:-translate-y-0.5 active:translate-y-1 active:shadow-inner;
 }
 
+.cta.w-icon {
+  @apply flex justify-center items-center gap-2;
+}
+
+.icon {
+  @apply w-8 h-8;
+}
+
+.icon .img {
+  @apply h-full;
+}
+
 .payment-form {
   @apply max-w-md m-auto bg-white rounded-lg shadow-lg;
 }

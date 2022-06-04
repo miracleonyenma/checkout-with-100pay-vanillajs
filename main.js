@@ -8,10 +8,11 @@ paymentForm.addEventListener('submit', (e) => {
   let firstname = paymentForm.firstName.value
   let lastname = paymentForm.lastName.value
   let emailaddress = paymentForm.emailAddress.value
+  let currency = paymentForm.currency.value
   let amount = paymentForm.amount.value
   let phone = paymentForm.phone.value
 
-  console.log({firstname, lastname, emailaddress, amount, phone})
+  console.log({firstname, lastname, emailaddress, currency, amount, phone})
 
   shop100Pay.setup({
     ref_id: `${Math.floor(Math.random() * 1000000000 + 1)}`,
@@ -24,7 +25,7 @@ paymentForm.addEventListener('submit', (e) => {
     },
     billing: {
       amount,
-      currency: "USD", // or any other currency supported by 100pay
+      currency, // or any other currency supported by 100pay
       description: "Test Payment",
       country: "USA",
       vat: 10, //optional
