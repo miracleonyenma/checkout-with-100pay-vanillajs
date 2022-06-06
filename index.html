@@ -9,36 +9,67 @@
   <body>
     <div id="app">
       <main>
-        <section class="p-4">
+        <section class="">
           <div class="checkout-wrapper">
             <div class="checkout-section">
-              <header class="checkout-header">
-                <figure class="site-logo">
-                  100 Stores
-                </figure>
-              </header>
-              <section class="cart-section">
-                <header class="cart-section-header">
-                  <h3>100 Stores checkout</h3>
-                  <p class="price total-amount">
-                    USD 40
-                  </p>
-                  <span class="items-count">
-                    3 items
-                  </span>
+              <div class="wrapper">
+                <header class="checkout-header">
+                  <figure class="site-logo">100 Stores</figure>
                 </header>
-                <section class="items-cont">
-                  <ul class="items">
-                    <li class="item">
-                      <div class="item-details">
-                        <div class="img-cont item-img">
-                          img
+                <section class="cart-section">
+                  <header class="cart-section-header">
+                    <h3>Checkout</h3>
+                    <h4 class="price total-amount">USD 40</h4>
+                    <span class="items-count"> 2 items </span>
+                  </header>
+                  <section class="items-cont">
+                    <ul class="items">
+                      <li class="item">
+                        <div class="item-details">
+                          <div class="img-cont item-img">
+                            <img
+                              src="https://stackblitz.com/files/vitejs-vite-dskcpl/github/miracleonyenma/checkout-with-100pay-vanillajs/master/assets/img/pngwing.com%20(2).png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="cont">
+                            <h4 class="item-name">Nike Kicks</h4>
+                            <div class="item-quantity">
+                              <span>Qty</span>
+                              <span class="font-bold">1</span>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </li>
-                  </ul>
+                        <div class="text-right">
+                          <p class="item-price">USD $20</p>
+                          <span class="text-gray-400">USD 20 each</span>
+                        </div>
+                      </li>
+                      <li class="item">
+                        <div class="item-details">
+                          <div class="img-cont item-img">
+                            <img
+                              src="https://stackblitz.com/files/vitejs-vite-dskcpl/github/miracleonyenma/checkout-with-100pay-vanillajs/master/assets/img/pngwing.com.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="cont">
+                            <h4 class="item-name">Nike Kicks</h4>
+                            <div class="item-quantity">
+                              <span>Qty</span>
+                              <span class="font-bold">1</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-right">
+                          <p class="item-price">USD $20</p>
+                          <span class="text-gray-400">USD 20 each</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
                 </section>
-              </section>
+              </div>
             </div>
             <div class="payment-form-cont">
               <form id="paymentForm" class="payment-form">
@@ -49,11 +80,21 @@
                   <div class="form-group">
                     <div class="form-control">
                       <label for="first-name">First Name</label>
-                      <input type="text" id="firstName" class="form-input" required/>
+                      <input
+                        type="text"
+                        id="firstName"
+                        class="form-input"
+                        required
+                      />
                     </div>
                     <div class="form-control">
                       <label for="last-name">Last Name</label>
-                      <input type="text" id="lastName" class="form-input" required/>
+                      <input
+                        type="text"
+                        id="lastName"
+                        class="form-input"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="form-control">
@@ -73,7 +114,6 @@
                     <label for="currency">Currency</label>
                     <select name="currency" id="currency">
                       <option value="USD">United States Dollar</option>
-                      <option value="NGN">Nigerian Naira</option>
                     </select>
                   </div>
                   <div class="form-control">
@@ -82,15 +122,17 @@
                       type="number"
                       id="amount"
                       class="form-input"
+                      value="40"
+                      disabled
                       required
                     />
                   </div>
                   <div class="form-submit">
                     <button type="submit" class="cta w-icon w-full">
-                      <span>Pay with</span>
-                      <span class="icon !w-16">
+                      <span>Pay with 100pay</span>
+                      <!-- <span class="icon !w-16">
                         <img src="https://100pay.co/img/100pay-logo.svg" alt="100pay logo" class="img">
-                      </span>
+                      </span> -->
                     </button>
                   </div>
                 </div>
