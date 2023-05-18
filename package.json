@@ -16,6 +16,6 @@
     "vite": "^2.9.9"
   },
   "dependencies": {
-    "@100pay-hq/checkout": "^1.1.1"
+    "@100pay-hq/checkout": "^1.2.3"
   }
 }
